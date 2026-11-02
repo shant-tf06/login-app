@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/css/output.css" rel="stylesheet">
+    <title>Login Gatitos</title>
+</head>
+<body>
+
+<header>
+    <img src="./src/img/gatito.png" alt="gatito" width="100px">
+    <img src="" alt=""> <!---una imagen para configuracion y otra para salir-->
+</header>
+
+<main>
+
+<h2>Marcaje</h2>
+<p>Realice el marcaje con la ubicación encedida para poder colocar la ubicación en tiempo real</p>
+
+<div class="w-full max-w-4xl mx-auto p-4 bg-white shadow-lg rounded-2xl border border-slate-100">
+  <h3 class="text-lg font-semibold text-slate-800 mb-3 flex items-center gap-2">
+    Ubicación del Punto de Marcaje <span class="text-sm font-normal text-slate-400">(Demo)</span>
+  </h3>
+  
+  <div class="overflow-hidden rounded-xl border border-slate-200 shadow-inner">
+    <iframe 
+      class="w-full h-96 border-0"
+      loading="lazy" 
+      allowfullscreen 
+      src="https://google.com/maps/embed/v1/place?q=place_id:ChIJN1t_tDeuEmsRUsoyG83frY4&key=YOUR_API_KEY">
+    </iframe>
+  </div>
+</div>
+
+<button type="submit">Marcar</button>
+<p>El marcaje se realiza exitosamente después de colocar la ubicación</p>
+</main>
+</body>
+</html>
