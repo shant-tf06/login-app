@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/css/output.css" rel="stylesheet">
+    <link href="./css/output.css" rel="stylesheet">
     <title>Login Gatitos</title>
 </head>
 
-<body>
-<header>
-    <img src="./src/img/gatito.png" alt="gatito" width="100px">
-    <img src="" alt=""> <!---una imagen para configuracion y otra para salir-->
-</header>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
 
-<main>
-    <h2>Registrarse</h2>
-    <h3>correo electrónico</h3>
-    <input type="email" name="email" required>
-    <h3>contraseña</h3>
-    <input type="password" name="password" required>
-    <button type="button" onclick="togglePasswordVisibility()">Mostrar contraseña</button>
-    <h3>confirmar contraseña</h3>
-    <input type="password" name="password_confirmation" required>
-    <button type="submit">Registro</button> 
+<main class="grow">
+
+<form action="" method="post" id="registerForm" class="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md text-center">
+    <section>
+      <h1 class="mt-6 text-3xl font-extrabold text-gray-900 tracking-tight">Registración</h1>
+        <label for="email" class="block text-lg font-medium text-gray-700">Email:</label>
+        <input type="email" id="email" name="email" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"/>
+    
+        <label for="password" class="block text-lg font-medium text-gray-700">Contraseña:</label>
+        <input type="password" id="password" name="password" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"/>
+        
+        <label for="confirmPassword" class="block text-lg font-medium text-gray-700">Confirmar Contraseña:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"/>
+        
+        <button type="submit" class="w-full flex justify-center px-3 py-2 border m-4 border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Registro</button>
+    </section>
+
+    
+</form>
+ 
 </main>
 
 </body>
